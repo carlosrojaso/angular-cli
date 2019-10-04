@@ -18,6 +18,12 @@
     "pacote": "9.5.8",
     "semver": "6.3.0",
     "semver-intersect": "1.4.0",
-    "rxjs": "6.4.0"
-  }
+    "rxjs": "6.4.0",
+    "snyk": "^1.230.5"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
